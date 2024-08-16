@@ -47,7 +47,7 @@ def main() -> None:
 
     model = build_model(num_features, num_classes)
 
-    opt = Adam()
+    opt = Adam(learning_rate=0.001)
 
     model.compile(
         loss="categorical_crossentropy",

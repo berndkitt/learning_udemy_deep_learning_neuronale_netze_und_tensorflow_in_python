@@ -14,8 +14,8 @@ def get_dataset(
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
     x_train = x_train.reshape(-1, num_features).astype(np.float32)
     x_test = x_test.reshape(-1, num_features).astype(np.float32)
-    y_train = to_categorical(y_train, num_classes=num_classes, dtype=np.float32)
-    y_test = to_categorical(y_test, num_classes=num_classes, dtype=np.float32)
+    y_train = to_categorical(y_train, num_classes=num_classes).astype(np.float32)
+    y_test = to_categorical(y_test, num_classes=num_classes).astype(np.float32)
     return (x_train, y_train), (x_test, y_test)
 
 

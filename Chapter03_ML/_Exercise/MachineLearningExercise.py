@@ -6,12 +6,12 @@ from sklearn.model_selection import train_test_split
 from tf_utils.dummyData import regression_data
 
 
-def mae(y_true: np.ndarray, y_pred: np.ndarray) -> np.ndarray:
-    return np.array([])
+def mae(y_true: np.ndarray, y_pred: np.ndarray) -> float:
+    return 0.0
 
 
-def mse(y_true: np.ndarray, y_pred: np.ndarray) -> np.ndarray:
-    return np.array([])
+def mse(y_true: np.ndarray, y_pred: np.ndarray) -> float:
+    return 0.0
 
 
 def main() -> None:

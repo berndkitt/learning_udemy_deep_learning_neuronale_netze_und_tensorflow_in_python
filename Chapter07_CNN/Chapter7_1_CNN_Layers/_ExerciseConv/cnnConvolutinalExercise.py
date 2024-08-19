@@ -49,7 +49,7 @@ def main() -> None:
     print(f"Conved Image:\n{conv_image.squeeze()}")
 
     layer = Conv2D(filters=1, kernel_size=(3, 3), strides=1, padding="same")
-    layer.build((4, 4, 1))
+    layer.build((4, 4, 1, 1))
     W, b = layer.get_weights()  # noqa: N806
     layer.set_weights([np.ones_like(W), np.zeros_like(b)])
     conv_image_tf = layer(image.reshape((1, 4, 4, 1))).numpy()

@@ -45,7 +45,7 @@ def main() -> None:
 
     conv_image = conv2D(image, kernel)
 
-    print(f"Prvious shape: {image.shape} current shape: {conv_image.shape}")
+    print(f"Previous shape: {image.shape} current shape: {conv_image.shape}")
     print(f"Conved Image:\n{conv_image.squeeze()}")
 
     layer = Conv2D(filters=1, kernel_size=(3, 3), strides=1, padding="same")
